@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body id="body">
+    <section>
+      <div class="container">
+        <div class="login">
+          <div class="title">
+            <h1>Sign in</h1>
+            <p>Sign in and start managing your candidates!</p>
+          </div>
+          <div class="sign-up">
+            <form action="" id="form-1">
+              <input type="text" placeholder="Name"  id="name-input"/>
+              <input type="text" placeholder="Login" id="login-input"/>
+              <input type="text" placeholder="E-mail" id="email-input"/>
+              <input type="text" placeholder="Password" id="pass-input"/>
+            </form>
+          </div>
+          <div class="forgot-pass">
+            <form action="" id="form-2">
+              <input type="checkbox" />
+              <label for="">Remember me</label>
+            </form>
+            <a href="">Forgot password?</a>
+          </div>
+          <button class="btn-login">Login</button>
+        </div>
+      </div>
+      <button type="button" class="btn-mode active" id="darkMode">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+      <button type="button" class="btn-mode" id="lightMode">
+        <i class="fa-solid fa-sun"></i>
+      </button>
+    </section>
+        <script src="./script.js"></script>
+  </body>
+</html>

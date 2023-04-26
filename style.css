@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #e5e5e5;
+}
+section {
+  padding: 45px 0 25px;
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 39px;
+}
+.title h1 {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  color: #224957;
+}
+.title p {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #224957;
+}
+.sign-up {
+  margin-top: 36px;
+  width: 90%;
+}
+#form-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+input {
+  padding: 13px 0 13px 18px;
+  outline: none;
+  border-radius: 10px;
+  border: none;
+  background: #224957;
+  color: white;
+}
+input::placeholder {
+  color: white;
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+}
+.forgot-pass {
+  display: flex;
+  justify-content: space-between;
+  width: 89%;
+  margin: 20px 0;
+  align-items: center;
+}
+#form-2 {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+#form-2 label {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #093545;
+  cursor: pointer;
+}
+input[type="checkbox"] {
+  accent-color: #224957;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #000000;
+}
+
+.btn-login {
+  padding: 13px 0;
+  width: 90%;
+  background: #20df7f;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  border: none;
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #224957;
+  cursor: pointer;
+  transition: all 1.5s ease;
+}
+.btn-login:hover{
+    background-color: chocolate;
+    
+}
+.btn-mode {
+  margin-top: 75px;
+  margin-left: 100px;
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: none;
+  transition: 0.3;
+}
+i {
+  font-size: 40px;
+  color: #000000;
+}
+.active {
+  display: block !important;
+}
+.dark {
+  background-color: #224957;
+  transition: 1s;
+}
+.light{
+    transition: 1s;
+}
+.dark button {
+  color: white !important;
+}
+.dark i {
+  color: white;
+}
+.dark .title > h1 {
+  color: white;
+}
+.dark .title > p {
+  color: white;
+}
+.dark .sign-up input {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #366f84;
+}
+.dark input::placeholder {
+  color: white;
+}
+.dark a {
+  color: #20df7f;
+}
+.dark #form-2 label {
+  color: white;
+}
