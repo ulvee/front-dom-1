@@ -34,28 +34,30 @@
           </div>
           <div class="sign-up">
             <form action="" id="form-1">
-              <input type="text" placeholder="Name"  id="name-input"/>
-              <input type="text" placeholder="Login" id="login-input"/>
+              <input type="text" placeholder="Name" id="name-input"/>
+              <p class="error name-error"></p>
               <input type="text" placeholder="E-mail" id="email-input"/>
-              <input type="text" placeholder="Password" id="pass-input"/>
-            </form>
-          </div>
-          <div class="forgot-pass">
-            <form action="" id="form-2">
-              <input type="checkbox" />
-              <label for="">Remember me</label>
-            </form>
-            <a href="">Forgot password?</a>
-          </div>
-          <button class="btn-login">Login</button>
-        </div>
-      </div>
-      <button type="button" class="btn-mode active" id="darkMode">
-        <i class="fa-solid fa-moon"></i>
-      </button>
-      <button type="button" class="btn-mode" id="lightMode">
-        <i class="fa-solid fa-sun"></i>
-      </button>
+              <p class="error email-error"></p>
+              <input type="password" placeholder="Password" id="pass-input"/>
+              <p class="error password-error"></p>
+              <input type="checkbox" id="check"  />
+           
+              
+              <label for="check">Remember me</label>
+              <a href="">Forgot password?</a>
+
+              
+              <button class="btn-login">Login</button>
+            </div>
+          </form>
+
+          <button type="button" class="btn-mode active" id="darkMode">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+          <button type="button" class="btn-mode" id="lightMode">
+            <i class="fa-solid fa-sun"></i>
+          </button>
+          
     </section>
         <script src="./script.js"></script>
   </body>

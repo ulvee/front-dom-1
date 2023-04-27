@@ -48,7 +48,7 @@ section {
 #form-1 {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  /* gap: 32px; */
 }
 input {
   padding: 13px 0 13px 18px;
@@ -57,6 +57,7 @@ input {
   border: none;
   background: #224957;
   color: white;
+  margin: 10px 0;
 }
 input::placeholder {
   color: white;
@@ -113,9 +114,8 @@ a {
   cursor: pointer;
   transition: all 1.5s ease;
 }
-.btn-login:hover{
-    background-color: chocolate;
-    
+.btn-login:hover {
+  background-color: chocolate;
 }
 .btn-mode {
   margin-top: 75px;
@@ -138,8 +138,8 @@ i {
   background-color: #224957;
   transition: 1s;
 }
-.light{
-    transition: 1s;
+.light {
+  transition: 1s;
 }
 .dark button {
   color: white !important;
@@ -166,3 +166,9 @@ i {
 .dark #form-2 label {
   color: white;
 }
+
+.error {
+  color: red;
+  
+}
+
