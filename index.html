@@ -34,31 +34,33 @@
           </div>
           <div class="sign-up">
             <form action="" id="form-1">
-              <input type="text" placeholder="Name" id="name-input"/>
+              <input class="inputs" type="text" placeholder="Name" id="name-input" />
               <p class="error name-error"></p>
-              <input type="text" placeholder="E-mail" id="email-input"/>
+              <input class="inputs" type="text" placeholder="E-mail" id="email-input" />
               <p class="error email-error"></p>
-              <input type="password" placeholder="Password" id="pass-input"/>
+              <input class="inputs" type="password" placeholder="Password" id="pass-input" />
               <p class="error password-error"></p>
-              <input type="checkbox" id="check"  />
-           
-              
-              <label for="check">Remember me</label>
-              <a href="">Forgot password?</a>
-
-              
+              <div class="check-div">
+                <div class="check-item-1">
+                  <input type="checkbox" id="check" />
+                  <label for="check">Remember me</label>
+                </div>
+                <a href="">Forgot password?</a>
+              </div>
               <button class="btn-login">Login</button>
-            </div>
-          </form>
-
-          <button type="button" class="btn-mode active" id="darkMode">
-            <i class="fa-solid fa-moon"></i>
-          </button>
-          <button type="button" class="btn-mode" id="lightMode">
-            <i class="fa-solid fa-sun"></i>
-          </button>
-          
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="modes">
+        <button type="button" class="btn-mode active" id="darkMode">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button type="button" class="btn-mode" id="lightMode">
+          <i class="fa-solid fa-sun"></i>
+        </button>
+      </div>
     </section>
-        <script src="./script.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>

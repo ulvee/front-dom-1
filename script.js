@@ -7,9 +7,7 @@ const inputElementEmail = document.getElementById("email-input");
 const nameError = document.querySelector(".name-error");
 const emailError = document.querySelector(".email-error");
 const passError = document.querySelector(".password-error");
-
 const form = document.querySelector("form");
-
 const emailRegex = /[A-Za-z0-9.]+[.]?[A-Za-z0-9]+@(code.edu.az)/;
 
 darkMode.addEventListener("click", () => {
@@ -45,57 +43,14 @@ form.addEventListener("submit", (e) => {
   }
 
   if (!inputElementPass.value) {
-    passError.innerText = "Pass can not be empty";
+    passError.innerText = "Password can not be empty";
   } else if (inputElementPass.value.length < 5) {
-    passError.innerText = "password should be more than 5 char";
+    passError.innerText = "Password should be more than 5 charachter";
   } else {
     passError.innerText = "";
   }
 });
 
 function validateEmail(email) {
-  return email.match(
-    /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-  );
+  return email.match(emailRegex);
 }
-
-// inputElementPass.addEventListener("input", function () {
-//   if (this.value.length < 5) {
-//     this.style.border = "2px solid red";
-//     this.style.backgroundColor = "white";
-//     this.style.color = "black";
-//   } else {
-//     this.style.border = "";
-//     this.style.backgroundColor = "";
-//     this.style.color = "";
-//   }
-// });
-
-// inputElementEmail.addEventListener("input", function () {
-//   if (this.value.length == 0) {
-//     this.style.border = "2px solid red";
-//     this.style.backgroundColor = "white";
-//     this.style.color = "black";
-//   }
-//   if (!emailRegex.test(this.value)) {
-//     this.style.border = "2px solid red";
-//     this.style.backgroundColor = "white";
-//     this.style.color = "black";
-//   } else {
-//     this.style.border = "";
-//     this.style.backgroundColor = "";
-//     this.style.color = "";
-//   }
-// });
-
-// inputElementLogin.addEventListener("input", function () {
-//   if (this.value.length == 0) {
-//     this.style.border = "2px solid red";
-//     this.style.backgroundColor = "white";
-//     this.style.color = "black";
-//   } else {
-//     this.style.border = "";
-//     this.style.backgroundColor = "";
-//     this.style.color = "";
-//   }
-// });
